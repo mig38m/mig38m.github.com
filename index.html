@@ -1,0 +1,242 @@
+<!doctype html>
+<title>CSS Grid Template 5</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "nav nav nav nav nav"
+    "header header header header header"
+    "razdel razdel razdel razdel razdel"
+    "article1 slider slider article2 sidebar"
+    "article3 article4 article5 article6 sidebar"
+    "footer footer footer footer social";
+  grid-template-rows: 40px 120px 80px 1fr 1fr 1fr;  
+  grid-template-columns: 1fr 1fr 1fr 1fr 180px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, article, nav, razdel, social, sidebar, slider {
+  padding: 1.2em;
+  background: rgba(208, 255, 0, 0.993);
+  border: solid 3px silver;
+  border-radius: 10px;
+  }
+#mainNav { 
+  grid-area: nav; 
+  } 
+#mainHeader {
+  grid-area: header;
+  }
+#mainRazdel { 
+  grid-area: razdel; 
+  }
+#mainSlider { 
+  grid-area: slider; 
+  }  
+#mainArticle { 
+  grid-area: article;  
+  }
+  #mainArticle1 { 
+  grid-area: article1;
+  background: rgb(48, 17, 158);   
+  }  
+  #mainArticle2 { 
+  grid-area: article2;
+  background: rgb(11, 197, 151);   
+  }   
+  #mainArticle3 { 
+  grid-area: article3;
+  background: rgb(238, 198, 21);   
+  } 
+  #mainArticle4 { 
+  grid-area: article4;
+  background: rgb(224, 14, 129);   
+  }
+  #mainArticle5 { 
+  grid-area: article5;
+  background: rgb(128, 87, 223);   
+  } 
+  #mainArticle6 { 
+  grid-area: article6;
+  background: rgb(47, 238, 9);   
+  }       
+#mainSidebar { 
+  grid-area: sidebar; 
+  } 
+#mainFooter {
+  grid-area: footer;
+  }
+#mainSocial {
+  grid-area: social;
+  } 
+
+
+ @media all and (max-width: 2550px) {
+  body { 
+    grid-template-areas: 
+    "nav nav nav nav"
+    "header header header header"
+    "razdel razdel razdel razdel"
+    "slider slider slider sidebar"
+    "article1 article2 article3 sidebar"
+    "article4 article5 article6 sidebar"
+    "footer footer footer social";
+  grid-template-rows: 40px 120px 80px 1fr 1fr 1fr 1fr;  
+  grid-template-columns: 1fr 1fr 1fr 180px;
+  }
+} 
+
+@media all and (max-width: 1700px) {
+  body { 
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "razdel razdel razdel"
+    "slider slider sidebar"
+    "article1 article2 sidebar"
+    "article3 article4 sidebar"
+    "article5 article6 sidebar"
+    "footer footer social";
+  grid-template-rows: 40px 120px 80px 1fr 1fr 1fr 1fr 1fr;  
+  grid-template-columns: 1fr 1fr 180px;
+  }
+} 
+
+@media all and (max-width: 1200px) {
+  body { 
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "razdel razdel"
+    "slider sidebar"
+    "article1 sidebar"
+    "article2 sidebar"
+    "article3 sidebar"
+    "article4 sidebar"
+    "article5 sidebar"
+    "article6 sidebar"
+    "footer social";
+  grid-template-rows: 40px 120px 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
+  grid-template-columns: 1fr 180px;
+  }
+} 
+
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 800px) {
+  body { 
+    grid-template-areas: 
+      "nav"
+      "header"
+      "razdel"
+      "slider"
+      "sidebar"
+      "article1"
+      "article2"
+      "article3"
+      "article4"
+      "article5"
+      "article6"
+      "footer"
+      "social";
+    grid-template-rows: 40px 120px 80px 1fr 80px 1fr 1fr 1fr 1fr 1fr 1fr 70px 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+
+/* 1.25 dpr */
+@media 
+(-webkit-min-device-pixel-ratio: 1.25), 
+(min-resolution: 120dpi){ 
+    /* Retina-specific stuff here */
+}
+
+/* 1.3 dpr */
+@media 
+(-webkit-min-device-pixel-ratio: 1.3), 
+(min-resolution: 124.8dpi){ 
+    /* Retina-specific stuff here */
+}
+
+/* 1.5 dpr */
+@media 
+(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dpi){ 
+    /* Retina-specific stuff here */
+}
+
+@media only screen and (min-width: 320px) {
+  
+    /* Small screen, non-retina */
+  
+  }
+  
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+  only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+  only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+  only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+  only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+  
+    /* Small screen, retina, stuff to override above media query */
+  
+  }
+  
+  @media only screen and (min-width: 700px) {
+  
+    /* Medium screen, non-retina */
+  
+  }
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+  only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+  only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+  only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+  only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+  only screen and (                min-resolution: 2dppx)  and (min-width: 700px) { 
+  
+    /* Medium screen, retina, stuff to override above media query */
+  
+  }
+  
+  @media only screen and (min-width: 1300px) {
+  
+    /* Large screen, non-retina */
+  
+  }
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+  only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+  only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+  only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+  only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+  only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
+  
+    /* Large screen, retina, stuff to override above media query */
+  
+  }
+
+</style>
+<body>
+  <nav id="mainNav">nav</nav>
+  <header id="mainHeader">Header</header>
+  <razdel id="mainRazdel">razdel</razdel>
+  <slider id="mainSlider">slider</slider>
+  <sidebar id="mainSidebar">Sidebar</sidebar>
+  <article id="mainArticle1">Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti</article>
+  <article id="mainArticle2">Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti</article>
+  <article id="mainArticle3">Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti</article>
+  <article id="mainArticle4">Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti</article>
+  <article id="mainArticle5">Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti</article>
+  <article id="mainArticle6">Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti</article>
+  <footer id="mainFooter">Footer</footer>
+  <social id="mainSocial">social</social>
+
+</body>
+
