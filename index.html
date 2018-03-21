@@ -42,26 +42,16 @@ header, footer, article, nav, razdel, sidebar, slider {
         zoom:1;
   }
   
-     .size {
-    white-space: pre-line:; 
+   .size {
+    white-space: nowrap; /* Отменяем перенос текста */
     overflow: hidden; /* Обрезаем содержимое */
     padding: 5px; /* Поля */
-    position: relative; /* Относительное позиционирование */
+    text-overflow: ellipsis; /* Многоточие */
+    maxlength="10"
    }
-   .size::after {
-    content: ''; /* Выводим элемент */
-    position: absolute; /* Абсолютное позиционирование */
-    right: 0; top: 0; /* Положение элемента */
-    width: 40px; /* Ширина градиента*/
-    height: 100%; /* Высота родителя */
-    /* Градиент */
-    background: -moz-linear-gradient(left, rgba(255,204,0, 0.2), #fc0 100%);
-    background: -webkit-linear-gradient(left, rgba(255,204,0, 0.2), #fc0 100%);
-    background: -o-linear-gradient(left, rgba(255,204,0, 0.2), #fc0 100%);
-    background: -ms-linear-gradient(left, rgba(255,204,0, 0.2), #fc0 100%);
-    background: linear-gradient(to right, rgba(255,204,0, 0.2), #fc0 100%);
-   }
-  
+   .size:hover {
+    background: #f0f0f0; /* Цвет фона */
+    white-space: normal; /* Обычный перенос текста */
 #mainNav { 
   grid-area: nav; 
   } 
