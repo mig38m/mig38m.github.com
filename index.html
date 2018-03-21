@@ -42,6 +42,27 @@ header, footer, article, nav, razdel, sidebar, slider {
         zoom:1;
   }
   
+     .size {
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    padding: 5px; /* Поля */
+    background: #fc0; /* Цвет фона */
+    position: relative; /* Относительное позиционирование */
+   }
+   .size::after {
+    content: ''; /* Выводим элемент */
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0; top: 0; /* Положение элемента */
+    width: 40px; /* Ширина градиента*/
+    height: 100%; /* Высота родителя */
+    /* Градиент */
+    background: -moz-linear-gradient(left, rgba(255,204,0, 0.2), #fc0 100%);
+    background: -webkit-linear-gradient(left, rgba(255,204,0, 0.2), #fc0 100%);
+    background: -o-linear-gradient(left, rgba(255,204,0, 0.2), #fc0 100%);
+    background: -ms-linear-gradient(left, rgba(255,204,0, 0.2), #fc0 100%);
+    background: linear-gradient(to right, rgba(255,204,0, 0.2), #fc0 100%);
+   }
+  
 #mainNav { 
   grid-area: nav; 
   } 
@@ -249,7 +270,7 @@ header, footer, article, nav, razdel, sidebar, slider {
   <razdel id="mainRazdel">razdel</razdel>
   <slider id="mainSlider">slider</slider>
   <sidebar id="mainSidebar">Sidebar</sidebar>
-  <article id="mainArticle1"><p> < maxlength="10"> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> </article>
+  <article id="mainArticle1"><p class="size"> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> </article>
   <article id="mainArticle2"><p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p>  <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> </article>
   <article id="mainArticle3"><p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p>  <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> </article>
   <article id="mainArticle4"><p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p>  <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> </article>
