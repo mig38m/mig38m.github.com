@@ -40,7 +40,14 @@ header, footer, article, nav, razdel, sidebar, slider {
   text-align: justify;
   text-align-last: justify;   /* Включаем в работу последнюю строку*/
   text-justify: newspaper;    /* Лекарство для IE6-7*/
-        zoom:1;
+  zoom:1;
+  }
+  
+  .img {
+    background-image: url('public/icons/screw.svg');
+   height: 15px;
+   width: 15px;
+   float: right;
   }
 
 #mainNav { 
@@ -245,8 +252,8 @@ header, footer, article, nav, razdel, sidebar, slider {
 </style>
 </head>
 <body>
-  <nav id="mainNav">nav</nav>
-  <header id="mainHeader"><img src="public/icons/screw.svg" width="10" height="10" style="border: none">Header</header>
+  <nav id="mainNav"> <div class="img"></div> nav</nav>
+  <header id="mainHeader">Header</header>
   <razdel id="mainRazdel">razdel</razdel>
   <slider id="mainSlider">slider</slider>
   <sidebar id="mainSidebar">Sidebar</sidebar>
