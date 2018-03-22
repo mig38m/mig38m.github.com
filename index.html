@@ -44,11 +44,34 @@ header, footer, article, nav, razdel, sidebar, slider {
   zoom:1;
   }
   
- #img-1 {
-  image: url(public/icons/screw.svg);
-  top: 2px; 
-  left: 2px;
-  }
+.glossy .image-wrap {
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+	-moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.glossy .image-wrap:after {
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 50%;
+	top: 0;
+	left: 0;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,.1) 100%);
+	background:
+		-moz-linear-gradient(top, rgba(255,255,255,0.7) 0%,
+		rgba(255,255,255,.1) 100%);
+	background:
+		-webkit-gradient(linear, left top, left bottom,
+		color-stop(0%,rgba(255,255,255,0.7)),
+		color-stop(100%,rgba(255,255,255,.1)));
+}
   
 #mainNav { 
   grid-area: nav; 
@@ -264,7 +287,7 @@ header, footer, article, nav, razdel, sidebar, slider {
   <article id="mainArticle5"><p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p>  <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> </article>
   <article id="mainArticle6"><p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> <p> Абсолютный мировой рекорд 3DMark Sky Diver россиянин установил при помощи дуэта GeForce GTX 1080 Ti </p> </article>
   <footer id="mainFooter">Footer</footer>
-  <social id="mainSocial"><img src="public/icons/facebook.svg"> <img src="public/icons/youtube.svg"> <img src="public/icons/odnoklassniki.svg"> <img src="public/icons/github.svg"> <img src="public/icons/google plus.svg"> </iframe> <img src="public/icons/vkontakte.svg"> </social>
+  <social id="mainSocial"><span class="image-wrap" <img src="public/icons/facebook.svg"> <img src="public/icons/youtube.svg"> <img src="public/icons/odnoklassniki.svg"> <img src="public/icons/github.svg"> <img src="public/icons/google plus.svg"> </iframe> <img src="public/icons/vkontakte.svg"></span> </social>
 
  <script src="css-polyfills.min.js"></script>
 </body>
