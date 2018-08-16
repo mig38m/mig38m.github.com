@@ -250,87 +250,7 @@ body {
 </style>
 </head>
 <body>
-	
-  .play {
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border-left: 60px solid #2c3e50;
-    margin: 100px auto 50px auto;
-    position: relative;
-    z-index: 1;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    left: 10px;
-  }
-  
-  .play:before {
-    content: '';
-    position: absolute;
-    top: -75px;
-    left: -115px;
-    bottom: -75px;
-    right: -35px;
-    border-radius: 50%;
-    border: 10px solid #2c3e50;
-    z-index: 2;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-  }
-  .play:after {
-    content: '';
-    opacity: 0;
-    transition: opacity 0.6s;
-    -webkit-transition: opacity 0.6s;
-    -moz-transition: opacity 0.6s;
-  }
-  .play:hover:before, .play:focus:before {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-  }
-  .play.active {
-    border-color: transparent;
-  }
-  .play.active:after {
-    content: '';
-    opacity: 1;
-    width: 25px;
-    height: 80px;
-    position: absolute;
-    right: 8px;
-    top: -40px;
-    border-right: 20px solid #2c3e50;
-    border-left: 20px solid #2c3e50;
-  }
-  
-  h1 {
-    text-transform: uppercase;
-    color: #34495e;
-    letter-spacing: 2px;
-    font-size: 2em;
-    margin-bottom: 0;
-  }
-  
-  canvas {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  audio {
-    position: fixed;
-    left: 10px;
-    bottom: 10px;
-    width: calc(100% - 20px);
-  }
-  
+
   	
   <nav id="mainNav">nav</nav>
   <header id="mainHeader">Header  </header>
@@ -346,7 +266,6 @@ body {
   <footer id="mainFooter">Footer </footer>
   <social id="mainSocial"><img src="public/icons/facebook.svg"> <img src="public/icons/youtube.svg"> <img src="public/icons/odnoklassniki.svg"> <img src="public/icons/github.svg"> <img src="public/icons/google plus.svg"> </iframe> <img src="public/icons/vkontakte.svg"></social>
 
-	
 
 </body>
 </html>
